@@ -248,3 +248,15 @@ main{
     height: 2rem;
     min-width: 1px !important;
 }
+
+@media screen and min-width(600px){
+    *{
+        transform: scale(.8);
+    }
+}
+
+
+
+
+
+
