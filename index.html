@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1 class="mainHeading">World Countries Data</h1>
+        <div class="descHeading">Currently, we have <span id="countries_count"></span> countries</div>
+        <div id="searchDetailDesc"><span id="searchResCount"></span> items satisfies the search criteria</div>
+    </header>
+    <main>
+        <div class="searchWrapper">
+            <div class="searchBox">
+                <input type="text" name="query" placeholder = "Search Country" id="searchQuery">
+            </div>
+            <div class="buttons">
+                <button class="btn btn__sort active" id="sortByName"><span class="btn__sort_txt">Name</span></button>
+                <button class="btn btn__sort" id="sortByCapital"><span class="btn__sort_txt">Capital</span></button>
+                <button class="btn btn__sort" id="sortByPopulation"><span class="btn__sort_txt">Population</span></button>
+                <a class="btn btn__redirect" href="#statBarDiv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z"/></svg></a>
+            </div>
+        </div>
+        <div class="countriesCards"></div>
+        <div class="statsDiv">
+            <div class="statFuncWrapper">
+                <div class="statButtons">
+                    <button class = "btn stat__btn active" id="statPopulationBtn">Population</button>
+                    <button class = "btn stat__btn" id="statLanguageBtn">Language</button>
+                </div>
+                <span class="statDesc"></span>
+            </div>
+            <div class="statBarsWrapper" id="statBarDiv"></div>
+        </div>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
